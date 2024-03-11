@@ -42,3 +42,5 @@ const handleClickDestroy = () => {
 
 createBtn.addEventListener('click', handleClickCreate);
 destroyBtn.addEventListener('click', handleClickDestroy);
+
+destroyBtn.classList.add('destroy-btn');

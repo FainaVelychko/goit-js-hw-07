@@ -8,4 +8,9 @@ categoriesArr.forEach(category => {
 
   const elementsQty = category.querySelectorAll('li').length;
   console.log(`Elements: ${elementsQty}`);
+
+  const elements = category.querySelectorAll('li');
+  elements.forEach(element => {
+    element.classList.add('test');
+  });
 });
