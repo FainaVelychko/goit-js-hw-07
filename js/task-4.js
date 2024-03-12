@@ -8,14 +8,14 @@ const handleSubmit = event => {
 
   if (userEmail === '' || userPassword === '') {
     alert('All form fields must be filled in');
+  } else {
+    const userData = {
+      email: userEmail.trim(),
+      password: userPassword.trim(),
+    };
+    console.log(userData);
+    form.reset();
   }
-  const userData = {
-    email: userEmail.trim(),
-    password: userPassword.trim(),
-  };
-
-  console.log(userData);
-  form.reset();
 };
 
 formEl.addEventListener('submit', handleSubmit);

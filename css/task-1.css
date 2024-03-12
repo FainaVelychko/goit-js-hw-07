@@ -24,12 +24,12 @@ h2 {
   border-radius: 8px;
   padding: 16px;
   width: 392px;
-  height: 264px;
+  height: 100%;
 }
 .item:not(:last-child) {
   margin-bottom: 24px;
 }
-.test {
+.item > ul > li {
   border: 1px solid #808080;
   border-radius: 4px;
   width: 360px;
@@ -41,8 +41,5 @@ h2 {
   color: #2e2f42;
 
   padding: 8px 16px;
-}
-
-.test:not(:last-child) {
   margin-bottom: 8px;
 }
